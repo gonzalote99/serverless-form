@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>serverless form</title>
+</head>
+<body>
+  <div id="emailFormCard" class="card">
+    <div class="image">
+     <img src="https://cdn.pixabay.com/photo/2019/01/12/16/21/breakfast-3928800_960_720.jpg" alt="img">
+    </div>
+    <div id="subscribeForm" class="subscribe">
+     <h2>subscribe</h2>
+     <p>sign up</p>
+     <form name="gform" id="gform" enctype="text/plain" action="GOOGLE_FORM_URL" target="hidden_iframe" onsubmit="submitted=true;">
+      <fieldset>
+       <input style="background:#3c3c44" type="email" placeholder="enter email" name="GOOGLE_ENTRY_FORM_NUM" id="GOOGLE_ENTRY_FORM_NUM" required>
+       <input type="submit" value="Subscribe"></fieldset>
+ 
+      </fieldset>
+ 
+     </form>
+    </div>
+
+  </div>
+  <iframe name="hidden_iframe"  id="hidden_iframe" style="display:none;"></iframe>
+  <script type="text/javascript">
+    var Google_Entry_ID = 'entry.2031583407';
+    
+    var Google_Form_Link = "https://docs.google.com/forms/d/e/1FAIpQLSeqIlTE59GOB_yxtowZdVbzoXvMEO_YRTmQ9YKIsLy32A7S-w/formResponse?"
+  </script>
+  
+  <script src="replace-vars.js"></script>
+  <script src="email-form.js"></script>
+</body>
+</html>
